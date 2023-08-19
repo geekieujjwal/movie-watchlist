@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--  -->
+    <header>
+      <div class="header-heading">
+        <h1>My Watchlist</h1>
+        <h3><a href="/index.html" id="watchlist">Search for movies</a></h3>
+      </div>
+    </header>
+    <!--  -->
+    <main>
+      <div class="loader">
+        <p>Your watchlist is looking a little empty ...</p>
+
+        <div id="add-movies">
+          <div id="plus-icon2"><a href="/index.html">+</a></div>
+          <p>Let's add some movies!</p>
+        </div>
+      </div>
+      <div id="movieList"></div>
+    </main>
+    <!--  -->
+    <script src="/watchlist.js"></script>
+  </body>
+</html>

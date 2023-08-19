@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #2e2e2f;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+body,
+.header-heading,
+.search-bar,
+#search-btn,
+main,
+.loader,
+.movies,
+.movie-about,
+.movie-brief,
+.plus-watchlist,
+#plus-icon,
+#plus-icon2 a,
+#add-movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  width: 85rem;
+  padding: 8rem 5rem;
+  background-image: url(/BG_Image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: rgb(96, 94, 94);
+  background-blend-mode: multiply;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #7f7f7f;
+}
+
+.header-heading {
+  justify-content: space-between;
+  font-size: x-large;
+}
+
+.search-bar {
+  font-size: 2rem;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid #959292;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.search-bar input {
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  background-color: #2e2e2f;
+  border: none;
+  color: #a5a5a5;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+}
+
+#search-btn {
+  border: none;
+  background-color: #4b4b4b;
+  padding: 0.9rem 2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+main {
+  margin-top: 22rem;
+  width: 85rem;
+  height: fit-content;
+  flex-direction: column;
+  font-size: xx-large;
+  color: #7f7f7f;
+  background-color: black;
+}
+
+.loader {
+  flex-direction: column;
+  margin-top: 2rem;
+  height: 65vh;
+  text-align: center;
+}
+
+.movies img {
+  width: 13.46rem;
+  height: 20rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+.movies {
+  padding: 4rem 4rem 2rem;
+  justify-content: flex-start;
+  color: white;
+  gap: 2rem;
+}
+
+.movie-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.movie-rating,
+.fa-star,
+.movie-brief {
+  font-size: 1.2rem;
+}
+
+.movie-description {
+  font-size: 1.4rem;
+  color: #7f7f7f;
+}
+
+hr {
+  width: 80%;
+  background-color: #2c2c2c;
+  border: none;
+  height: 1px;
+  margin: auto;
+}
+
+.movie-about {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.movie-brief {
+  gap: 2rem;
+}
+
+#plus-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.added-to-watchlist {
+  display: none;
+}
+
+.plus-watchlist {
+  gap: 0.5rem;
+  font-size: 1.4rem;
+}
+
+#plus-icon2 a {
+  font-size: 2rem;
+  color: black;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#add-movies {
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.loader p {
+  font-size: 1.8rem;
+}
+
+.hidden {
+  display: none;
+}
