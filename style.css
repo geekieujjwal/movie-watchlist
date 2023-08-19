@@ -39,10 +39,10 @@ body {
 header {
   width: 85rem;
   padding: 8rem 5rem;
-  background-image: url(/BG_Image.jpg);
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Dark-Anime-Desktop-Wallpaper-4K.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: rgb(96, 94, 94);
+  background-color: rgb(229, 133, 133);
   background-blend-mode: multiply;
   position: fixed;
   top: 0;
@@ -95,6 +95,7 @@ main {
   font-size: xx-large;
   color: #7f7f7f;
   background-color: black;
+  align-items: flex-start;
 }
 
 .loader {
@@ -102,6 +103,7 @@ main {
   margin-top: 2rem;
   height: 65vh;
   text-align: center;
+  width: 100%;
 }
 
 .movies img {
@@ -198,4 +200,8 @@ hr {
 
 .hidden {
   display: none;
+}
+
+#movieList2 {
+  width: 100%;
 }

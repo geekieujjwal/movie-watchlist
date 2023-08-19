@@ -1,5 +1,5 @@
 //
-const movieList = document.getElementById("movieList");
+const movieList = document.getElementById("movieList2");
 const loader = document.querySelector(".loader");
 let arrayOfId = JSON.parse(localStorage.getItem("movie"));
 console.log(arrayOfId);
