@@ -10,7 +10,13 @@ const getMovie = async () => {
   );
   const data = await res.json();
 
+  // Checking API Limit
+  if (!Response.ok) {
+    return alert("API Limit Reached, check out again tomorrow 🙏🏻");
+  }
+
   // If there is no movie, then unable to find in Loader
+  console.log(data.Search);
   if (data.Search === undefined) {
     loader.style.fontSize = "1.8rem";
     loader.textContent = `Unable to find what you're looking for. Please try another search.`;
