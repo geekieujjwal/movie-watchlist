@@ -9,7 +9,7 @@ const getWatchlistMovie = (array) => {
   movieList.innerHTML = "";
   array.forEach(async (movieID) => {
     const res = await fetch(
-      `http://www.omdbapi.com/?i=${movieID}&apikey=f230991a`
+      `https://www.omdbapi.com/?i=${movieID}&apikey=f230991a`
     );
     const watchlistedMovies = await res.json();
     movieList.innerHTML += `

@@ -6,7 +6,7 @@ const loader = document.querySelector(".loader");
 const getMovie = async () => {
   // Fetching MovieData after taking user Input
   const res = await fetch(
-    `http://www.omdbapi.com/?s=${inputEl.value}&plot=full&apikey=f230991a`
+    `https://www.omdbapi.com/?s=${inputEl.value}&plot=full&apikey=f230991a`
   );
   const data = await res.json();
 
@@ -24,7 +24,7 @@ const getMovie = async () => {
       //Fetching Movies after updating the URL()
       const getMovieDetails = async () => {
         const res = await fetch(
-          `http://www.omdbapi.com/?t=${movie.Title}&apikey=f230991a`
+          `https://www.omdbapi.com/?t=${movie.Title}&apikey=f230991a`
         );
         const dataOfMovie = await res.json();
         loader.textContent = "";
