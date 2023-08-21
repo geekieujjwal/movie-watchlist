@@ -10,11 +10,6 @@ const getMovie = async () => {
   );
   const data = await res.json();
 
-  // Checking API Limit
-  if (!Response.ok) {
-    return alert("API Limit Reached, check out again tomorrow 🙏🏻");
-  }
-
   // If there is no movie, then unable to find in Loader
   console.log(data.Search);
   if (data.Search === undefined) {
